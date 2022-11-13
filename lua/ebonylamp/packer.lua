@@ -5,6 +5,8 @@ return require("packer").startup(function(use)
     use("folke/tokyonight.nvim")
 
     use("gruvbox-community/gruvbox")
+    
+    use("colepeters/spacemacs-theme.vim")
 
     use { 'feline-nvim/feline.nvim', branch = '0.5-compat' }
 
@@ -25,5 +27,8 @@ return require("packer").startup(function(use)
         'numToStr/Comment.nvim',
     }
     use { 'neoclide/coc.nvim', branch='release' }
+
+    use 'airblade/vim-gitgutter'
+
 end)
 
