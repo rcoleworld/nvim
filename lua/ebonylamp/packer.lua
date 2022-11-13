@@ -21,6 +21,9 @@ return require("packer").startup(function(use)
         }
     }
 
+    use {
+        'numToStr/Comment.nvim',
+    }
     use { 'neoclide/coc.nvim', branch='release' }
 end)
 
