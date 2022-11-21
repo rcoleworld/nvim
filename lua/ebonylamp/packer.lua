@@ -7,7 +7,7 @@ return require("packer").startup(function(use)
     use("gruvbox-community/gruvbox")
     
     use("colepeters/spacemacs-theme.vim")
-
+    use { "catppuccin/nvim", as = "catppuccin" }
     use { 'feline-nvim/feline.nvim', branch = '0.5-compat' }
 
     -- Practical features
@@ -21,6 +21,11 @@ return require("packer").startup(function(use)
         requires = {
             'nvim-tree/nvim-web-devicons'
         }
+    }
+
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
     }
 
     use {
