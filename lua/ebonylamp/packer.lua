@@ -1,11 +1,5 @@
 return require("packer").startup(function(use)
     use("wbthomason/packer.nvim")
-    -- Colorschemes
-    use("folke/tokyonight.nvim")
-
-    use("gruvbox-community/gruvbox")
-
-    use("colepeters/spacemacs-theme.vim")
     use { "catppuccin/nvim", as = "catppuccin" }
     use {
         'nvim-lualine/lualine.nvim',
@@ -58,5 +52,7 @@ return require("packer").startup(function(use)
         }
     }
     use { 'sbdchd/neoformat' }
+    use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
+    use('nvim-treesitter/playground')
 end)
 
