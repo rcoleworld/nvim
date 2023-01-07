@@ -1,11 +1,10 @@
 return require("packer").startup(function(use)
     use("wbthomason/packer.nvim")
-
     -- Colorschemes
     use("folke/tokyonight.nvim")
 
     use("gruvbox-community/gruvbox")
-    
+
     use("colepeters/spacemacs-theme.vim")
     use { "catppuccin/nvim", as = "catppuccin" }
     use {
@@ -58,5 +57,6 @@ return require("packer").startup(function(use)
             {'rafamadriz/friendly-snippets'},
         }
     }
+    use { 'sbdchd/neoformat' }
 end)
 
