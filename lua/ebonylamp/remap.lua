@@ -1,7 +1,7 @@
 local nnoremap = require("ebonylamp.keymap").nnoremap
 
 nnoremap("<c-n>", "<cmd>NvimTreeToggle<CR>")
-nnoremap("==", "<cmd>Neoformat<CR>")
+nnoremap("<c-f>", "<cmd>Neoformat<CR>")
 nnoremap("<leader>p", "0p")
 nnoremap("<leader>d", "0d")
 
