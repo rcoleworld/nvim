@@ -5,5 +5,6 @@ require("ebonylamp.telescope")
 require("ebonylamp.coc")
 require("ebonylamp.comment")
 require("ebonylamp.lualine")
+require("ebonylamp.lsp")
 require("ebonylamp.tree")
 
