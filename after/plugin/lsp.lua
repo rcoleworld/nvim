@@ -1,12 +1,18 @@
 local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
-lsp.ensure_installed({
-    'tsserver',
-    'eslint',
-    'sumneko_lua',
-    'rust_analyzer',
-    'gopls',
+require('mason').setup({})
+require('mason-lspconfig').setup({
+    ensure_installed = {    
+        'tsserver',
+        'eslint',
+        'lua_ls',
+        'rust_analyzer',
+        'gopls',
+    },
+    handlers = {
+      lsp.default_setup,
+    },
 })
 
 lsp.set_preferences({
