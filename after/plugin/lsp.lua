@@ -14,6 +14,8 @@ require('mason-lspconfig').setup({
         'gopls',
         'denols',
         'elixirls',
+        'ocamllsp',
+        'tailwindcss'
     },
     handlers = {
       lsp.default_setup,
